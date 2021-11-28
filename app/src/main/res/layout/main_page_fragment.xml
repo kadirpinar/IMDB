@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    tools:context=".ui.main.MainPageFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="IMDB"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/design_default_color_primary"
+            />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movies_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:id="@+id/add_button"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <com.example.imdb.utilities.CustomButtonView
+            android:layout_marginHorizontal="@dimen/margin_m"
+            android:layout_marginVertical="@dimen/margin_m"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_area" />
+    </LinearLayout>
+        <ProgressBar
+            android:layout_width="@dimen/button_area"
+            android:visibility="invisible"
+            android:indeterminateTint="@color/orange"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress_bar"
+            android:layout_height="@dimen/button_area"/>
+    </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

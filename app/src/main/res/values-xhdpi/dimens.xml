@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_l">6.6dp</dimen>
+    <dimen name="margin_m">13.20dp</dimen>
+    <dimen name="margin_large">19.8dp</dimen>
+    <dimen name="margin_xlarge">26.4dp</dimen>
+    <dimen name="elevation">7.92dp</dimen>
+    <dimen name="radius">19.8dp</dimen>
+    <dimen name="radius_l">26.4dp</dimen>
+    <dimen name="icon_area">31.68dp</dimen>
+    <dimen name="image_area_l">211.2dp</dimen>
+    <dimen name="vote_area">132dp</dimen>
+    <dimen name="card_area">264dp</dimen>
+    <dimen name="title">27.72sp</dimen>
+    <dimen name="year">23.76sp</dimen>
+    <dimen name="vote">22.44sp</dimen>
+    <dimen name="image_poster_area">330dp</dimen>
+    <dimen name="button_area">66dp</dimen>
+
+</resources>
