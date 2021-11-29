@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ProgressBar
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -45,7 +46,7 @@ class MainPageFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel.getDataFromApi(1)
         addButton.setOnClickListener{
-            println("Button Clicked")
+           Toast.makeText(context,"Button Clicked",Toast.LENGTH_SHORT).show()
         }
         moviesRecylerView.addOnScrollListener(object :RecyclerView.OnScrollListener(){
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
